@@ -26,7 +26,7 @@ test('learn select dropdown',async({page})=>{
     //for loop -> used for iteration
 
     for (let index = 0; index < ddCount; index++) {
-        
+        //printing dropdown items in terminal
         console.log(await ddvalues.nth(index).innerText());
         
     }
