@@ -34,21 +34,5 @@ test('learn select dropdown',async({page})=>{
 
 })
 
-//custom dropdown
-
-test.only('learn to handle custom dropdown',async({page})=>{
-    await page.goto('https://leafground.com/select.xhtml')
-    //selecting the dropdown
-
-    await page.locator('text=Select Country').nth(1).click()
-
-    //select the desired option from the dropdown
-
-    await page.locator('[data-label="India"]').click()
-
-    let ddText = await page.locator('[data-label="India"]').innerText()
-    console.log(ddText);
-    
 
 
-})
